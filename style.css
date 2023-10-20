@@ -43,7 +43,8 @@ header,
 }
 
 h3 {
-    margin: 20px 15px;
+    margin: 0;
+    padding: 20px;
 
 }
 
@@ -222,7 +223,6 @@ button {
     row-gap: 10px;
     margin-top: 16px;
     
-
 }
 
 
@@ -235,7 +235,7 @@ button {
 
 .color {
     grid-row: 1 / 4;
-    background-color: rgb(71, 165, 83);
+    background-color: rgb(110, 170, 92);
     border-radius: 8px 0 0 8px;
 
 }
@@ -260,14 +260,32 @@ button {
     grid-row: 2;
     width: clamp(260px, 75%, 400px);
     margin-top: 16px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    
 
 }
  .post {
     margin: 0;
- }
+    height: 20%;
+    padding: 0 10px
+    
 
+    
+ } 
+
+.a-posts h4 {
+    margin: 10px 0 0 0;
+    color: black;
+    padding: 0 10px;
+}
+
+hr {
+    width: 92%;
+}
 
 /*Trending Styling*/
+
 .trending h3 {
     grid-row: 3;
 }
@@ -275,7 +293,33 @@ button {
 .names {
     width: clamp(260px, 75%, 400px);
     grid-row: 4 / 5;
-    margin-top: 16px;
+    margin-top: 16px;  
+    display:grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: repeat(4,75px);
+    padding-top: 10px;
+    box-sizing: border-box;
+    padding-left: 10px;
     
 }
 
+.names img {
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+.user-trends {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    align-self: center;
+    padding-left: 5px;
+    
+}
+
+.user-trends::first-line {
+    color: black;
+}
