@@ -1,0 +1,62 @@
+/* Styling that affects multiple*/
+
+body {
+    background-color: rgb(75, 75, 75);
+    
+}
+ul {
+    list-style-type: none;
+}
+.container,
+.projects, 
+.announcements, 
+.sidebar, 
+header, 
+.trending,
+.search-area, 
+.smalluser, 
+.greeting, 
+.buttons, 
+.greeting-words {
+    display:grid;
+}
+
+.search-area,
+.greeting {
+    grid-template-columns: 10% 1fr;
+}
+
+.buttons, .smalluser {
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+
+
+
+
+.container {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 20% 2fr 1fr;;
+
+}
+
+
+
+header {
+    background-color: white;
+    grid-column: 2 / 4;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.sidebar {
+    background-color: rgb(86, 86, 228);
+    grid-row: 1/4;
+    text-align: center;
+}
+
+.trending {
+    grid-column: 3;
+}
