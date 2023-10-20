@@ -20,7 +20,8 @@ header,
 .greeting-words,
 .card,
 .trending,
-.nav-button {
+.nav-button,
+.project-links {
     display:grid;
 }
 
@@ -210,9 +211,6 @@ button {
     grid-template-rows: 50px 350px 50px 350px;
     background-color: rgb(217, 223, 228);
     grid-area: 2 / 2 / 5 / 4;
-    
-
-
 }
 
 .project-cards {
@@ -222,7 +220,6 @@ button {
     grid-row: 2 / 5;
     row-gap: 10px;
     margin-top: 16px;
-    
 }
 
 
@@ -230,7 +227,8 @@ button {
     background-color: white;
     height:200px;
     grid-template-columns: 10px 1fr;
-    grid-template-rows: 30px 1fr 30px;
+    grid-template-rows: 30px 1fr 40px;
+    box-sizing: border-box; 
 }
 
 .color {
@@ -246,10 +244,22 @@ button {
 }
 
 .card h2 {
-    padding: .5rem;
+    padding: 10px;
+    margin: 0;
     color: black;
 }
 
+.project-links svg {
+    width: 25px;
+}
+
+.project-links {
+    grid-template-columns: repeat(3,25px);
+    justify-self: end;
+    margin: 0;
+    padding: 0 10px 10px 10px;
+    gap: 10px;
+}
 /*Announcement styling*/
 .a{
     grid-row:1;
